@@ -1,0 +1,45 @@
+// Task 1: Product Price Management
+let prices = [100, 200, 300, 400, 500];
+prices.push(600); // Add a new price
+prices.shift(); // Remove the first price
+console.log("Updated Prices:", prices);
+
+// Task 2: Modifying Customer Orders
+let orders = [10, 20, 30, 40, 50];
+orders[2] += 5; // Increase third order quantity by 5
+let totalOrders = orders.reduce((sum, order) => sum + order, 0);
+console.log("Updated Orders:", orders);
+console.log("Total Order Count:", totalOrders);
+
+// Task 3: Employee Performance Tracking
+let employee = {
+  name: "John Doe",
+  role: "Developer",
+  performanceScore: 85,
+  isActive: true,
+};
+employee.performanceScore = 90; // Update performance score
+employee.promotionEligible = true; // Add new property
+console.log("Updated Employee:", employee);
+
+// Task 4: Customer Feedback Records
+let feedback = [
+  { customerName: "Alice", feedbackText: "Great service!", rating: 5 },
+  { customerName: "Bob", feedbackText: "Good quality!", rating: 4 },
+  { customerName: "Charlie", feedbackText: "Fast delivery!", rating: 5 },
+];
+feedback.push({ customerName: "David", feedbackText: "Excellent support!", rating: 5 });
+console.log("Customer Feedback:", feedback);
+
+// Task 5: Inventory Management System
+let inventory = {
+  itemName: "Laptop",
+  stockCount: 50,
+  price: 1200,
+  calculateTotalValue: function () {
+    return this.stockCount * this.price;
+  },
+};
+console.log("Inventory Details:", inventory);
+console.log("Total Inventory Value:", inventory.calculateTotalValue());
+ 
